@@ -1,7 +1,19 @@
-# README
+# Find My Coffee Api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto desenvolvido durante a semana super full stack fornecido pela OneBitCode [onebitcode.com].
+
+Esta api foi desenvolvida utilizando: 
+
+[rails.com] Ruby on Rails 6 
+
+[postgresql.org] Postgresql
+
+[postgis.org] Postgis
+
+[docker.com] Docker
+
+[https://docs.docker.com/compose] docker-compose
+
 
 Things you may want to cover:
 
