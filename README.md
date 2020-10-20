@@ -46,7 +46,7 @@ docker-compose run --rm app bundle install
 5 - Crie os bancos de dados.
 
 ```sh
-docker-compose run --rm app bundle exec rails db:create
+docker-compose run --rm app bundle exec rails db:create db:migrate
 ```
 
 6 - Suba a aplicação.
