@@ -20,11 +20,13 @@ ActiveRecord::Schema.define(version: 2020_10_20_142459) do
   enable_extension "postgis_topology"
 
   create_table "ratings", force: :cascade do |t|
+    t.bigint "store_id", null: false
     t.integer "value"
     t.string "opinion"
     t.string "user_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["store_id"], name: "index_ratings_on_store_id"
   end
 
   create_table "stores", force: :cascade do |t|
@@ -37,4 +39,5 @@ ActiveRecord::Schema.define(version: 2020_10_20_142459) do
     t.index ["lonlat"], name: "index_stores_on_lonlat", using: :gist
   end
 
+  add_foreign_key "ratings", "stores"
 end
