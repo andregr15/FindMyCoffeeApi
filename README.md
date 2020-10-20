@@ -1,59 +1,61 @@
 # Find My Coffee Api
 
-Projeto desenvolvido durante a semana super full stack fornecido pela OneBitCode [https://www.onebitcode.com].
+Projeto desenvolvido durante a semana super full stack fornecido pela [OneBitCode](https://www.onebitcode.com).
 
 Esta api foi desenvolvida utilizando: 
 
-[https://www.rails.com] Ruby on Rails 6 
+[Ruby on Rails](https://www.rails.com)
 
-[https://www.postgresql.org] Postgresql
+[Postgresql](https://www.postgresql.org)
 
-[https://www.postgis.org] Postgis
+[Postgis](https://www.postgis.org)
 
-[https://www.docker.com] Docker
+[Docker](https://www.docker.com)
 
-[https://docs.docker.com/compose] docker-compose
+[docker-compose](https://docs.docker.com/compose)
 
 
 ### Execução do projeto
 
 Para a excução do projeto você deve ter o docker e o git instalados.
 
-`1 - Abra o terminal e faça o clone desse repositório com o git.`
+1 - Abra o terminal e faça o clone desse repositório com o git.
 
 ```sh
 git clone https://github.com/andregr15/FindMyCoffeeApi find_my_coffee_api
 ```
 
-`2 - Acesse a pasta find_my_coffee_api.`
+2 - Acesse a pasta find_my_coffee_api.
 
 ```sh
 cd find_my_coffee_api
 ```
 
-`3 - Execute o docker-compose para realizar o build das imagens e criação dos containers.`
+3 - Execute o docker-compose para realizar o build das imagens e criação dos containers.
 
 ```sh
 docker-compose build
 ```
 
-`4 - Instale as dependências do rails.`
+4 - Instale as dependências do rails.
 
 ```sh
 docker-compose run --rm app bundle install
 ```
 
-`5 - Crie os bancos de dados.`
+5 - Crie os bancos de dados.
 
 ```sh
 docker-compose run --rm app bundle exec rails db:create
 ```
 
-`6 - Suba a aplicação.`
+6 - Suba a aplicação.
 
 ```sh
 docker-compose up
 ```
 
-`7 - Acesse o caminho localhost:3001 em qualquer browser e você verá o rails sendo executado.`
+7 - Acesse o caminho `localhost:3001` em qualquer browser e você verá o rails sendo executado.
+
+![rails welcome](https://zegetech.com/assets/images/blog/rails-docker/rails_welcome.png)
 
