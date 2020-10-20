@@ -5,7 +5,6 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: docker
       POSTGRES_PASSWORD: docker
     volumes:
       - '/home/desenvolvimento/arquivos/postgres/data_find_my_coffee:/var/lib/postgresql/data'
